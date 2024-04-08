@@ -1,0 +1,119 @@
+/bin/df -T --local
+/bin/echo
+/bin/gzip
+/bin/sh /etc/cron.daily/apt-compat
+/bin/sh /etc/cron.daily/dpkg
+/bin/sh /etc/cron.daily/logrotate
+/bin/sh /etc/cron.daily/man-db
+/bin/sh /etc/update-motd.d/00-header
+/bin/sh /etc/update-motd.d/10-help-text
+/bin/sh /etc/update-motd.d/50-landscape-sysinfo
+/bin/sh /etc/update-motd.d/50-motd-news
+/bin/sh /etc/update-motd.d/50-motd-news --force
+/bin/sh /etc/update-motd.d/90-updates-available
+/bin/sh /etc/update-motd.d/91-contract-ua-esm-status
+/bin/sh /etc/update-motd.d/91-release-upgrade
+/bin/sh /etc/update-motd.d/92-unattended-upgrades
+/bin/sh /etc/update-motd.d/95-hwe-eol
+/bin/sh /etc/update-motd.d/97-overlayroot
+/bin/sh /etc/update-motd.d/98-fsck-at-reboot
+/bin/sh /etc/update-motd.d/98-reboot-required
+/bin/sh /usr/bin/lesspipe
+/bin/sh /usr/lib/apt/apt.systemd.daily install
+/bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held install
+/bin/sh /usr/lib/apt/apt.systemd.daily update
+/bin/sh /usr/lib/rsyslog/rsyslog-rotate
+/bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot
+/bin/sh /usr/libexec/dpkg/dpkg-db-backup
+/bin/sh /usr/sbin/on_ac_power
+/bin/sh /usr/share/unattended-upgrades/update-motd-unattended-upgrades
+/bin/sh -c    cd / && run-parts --report /etc/cron.hourly
+/bin/sh -c test -e /run/systemd/system || SERVICE_MODE=1 /usr/lib/x86_64-linux-gnu/e2fsprogs/e2scrub_all_cron
+/bin/sh -e /etc/cron.daily/apport
+/bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+/bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required
+/bin/systemctl is-failed sophos-spl-update.service
+/bin/systemctl start sophos-spl-update.service
+/lib/systemd/systemd-hostnamed
+/lib/systemd/systemd-localed
+/lib/systemd/systemd-networkd-wait-online -q --timeout=30
+/lib/systemd/systemd-user-runtime-dir start 1000
+/opt/sophos-spl/base/bin/machineid --dump-mac-addresses
+/opt/sophos-spl/base/bin/SulDownloader /opt/sophos-spl/base/update/var/updatescheduler/update_config.json /opt/sophos-spl/base/update/var/updatescheduler/update_report.json
+/opt/sophos-spl/base/bin/telemetry /opt/sophos-spl/base/telemetry/var/telemetry-exe.json
+/opt/sophos-spl/base/update/versig -c/opt/sophos-spl/base/update/rootcerts -f/opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/manifest.dat -d/opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model
+/opt/sophos-spl/plugins/av/sbin/sophos_threat_detector
+/opt/sophos-spl/plugins/av/sbin/sophos_threat_detector_launcher
+/opt/sophos-spl/plugins/av/sbin/sync_versioned_files /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/vdl /opt/sophos-spl/plugins/av/chroot/susi/update_source/vdl --copy
+/usr/bin/date +%Z
+/usr/bin/dpkg --print-foreign-architectures
+/usr/bin/du -B 1000 -sx /opt/sophos-spl
+/usr/bin/env bash /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/install.sh --instdir /opt/sophos-spl
+/usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+/usr/bin/find /var/cache/man -type f -name *.gz -atime +6 -delete
+/usr/bin/free -t
+/usr/bin/gdbus call org.freedesktop.PackageKit.StateHasChanged cache-update --system --dest org.freedesktop.PackageKit --object-path /org/freedesktop/PackageKit --timeout 4 --method
+/usr/bin/head -100 /proc/uptime
+/usr/bin/hostnamectl
+/usr/bin/install -d -o man -g man -m 0755 /var/cache/man
+/usr/bin/ischroot -t
+/usr/bin/localectl
+/usr/bin/lscpu
+/usr/bin/mandb --quiet
+/usr/bin/python3 /usr/bin/cloud-id
+/usr/bin/python3 /usr/bin/landscape-sysinfo
+/usr/bin/python3 /usr/bin/unattended-upgrade
+/usr/bin/python3 /usr/bin/unattended-upgrade --download-only
+/usr/bin/python3 /usr/bin/unattended-upgrade --help
+/usr/bin/python3 /usr/lib/cnf-update-db
+/usr/bin/python3 /usr/lib/ubuntu-advantage/apt_news.py
+/usr/bin/python3 /usr/lib/ubuntu-advantage/esm_cache.py
+/usr/bin/python3 /usr/lib/update-notifier/apt-check --human-readable
+/usr/bin/python3 /usr/lib/update-notifier/package-data-downloader
+/usr/bin/python3 -Es /usr/bin/lsb_release -c -s
+/usr/bin/test -S /var/run/dbus/system_bus_socket
+/usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db
+/usr/bin/ubuntu-distro-info --series jammy -yeol
+/usr/bin/ubuntu-distro-info --supported-esm
+/usr/bin/uname -m
+/usr/lib/apt/apt-helper wait-online
+/usr/lib/apt/methods/gpgv
+/usr/lib/apt/methods/https
+/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+/usr/lib/systemd/user-generators/systemd-xdg-autostart-generator /run/user/1000/systemd/generator /run/user/1000/systemd/generator.early /run/user/1000/systemd/generator.late
+/usr/sbin/logrotate /etc/logrotate.conf
+/usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %u %f -o AuthorizedKeysCommandUser ec2-instance-connect -R
+apt-config shell ARCHIVE_KEYRING APT::Key::ArchiveKeyring
+apt-config shell ARCHIVE_KEYRING_URI APT::Key::ArchiveKeyringURI
+apt-config shell AutoAptEnable APT::Periodic::Enable
+apt-config shell AutocleanInterval APT::Periodic::AutocleanInterval
+apt-config shell BackupArchiveInterval APT::Periodic::BackupArchiveInterval
+apt-config shell Cache Dir::Cache::archives/d
+apt-config shell CleanInterval APT::Periodic::CleanInterval
+apt-config shell Debdelta APT::Periodic::Download-Upgradeable-Packages-Debdelta
+apt-config shell DownloadUpgradeableInterval APT::Periodic::Download-Upgradeable-Packages
+apt-config shell DpkgStatus Dir::State::status
+apt-config shell EtcDir Dir::Etc
+apt-config shell GPGV Apt::Key::gpgvcommand
+apt-config shell ListDir Dir::State::Lists
+apt-config shell MASTER_KEYRING APT::Key::MasterKeyring
+apt-config shell MaxAge APT::Periodic::MaxAge
+apt-config shell MaxSize APT::Archives::MaxSize
+apt-config shell MinAge APT::Archives::MinAge
+apt-config shell REMOVED_KEYS APT::Key::RemovedKeys
+apt-config shell SourceList Dir::Etc::sourcelist
+apt-config shell StateDir Dir::State
+apt-config shell StateDir Dir::State/d
+apt-config shell TRUSTEDFILE Apt::GPGV::TrustedKeyring
+apt-config shell TRUSTEDFILE Dir::Etc::Trusted/f
+apt-config shell TRUSTEDPARTS Dir::Etc::TrustedParts/d
+apt-config shell UnattendedUpgradeInterval APT::Periodic::Unattended-Upgrade
+apt-config shell UpdateInterval APT::Periodic::Update-Package-Lists
+apt-config shell VERBOSE APT::Periodic::Verbose
+apt-get check -qq
+awk {print $1}
+awk {print $1} /proc/uptimebasename /usr/bin/lesspipe
+bash /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/install.sh --instdir /opt/sophos-spl
+bc
+cat /etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
+
