@@ -116,4 +116,125 @@ awk {print $1} /proc/uptimebasename /usr/bin/lesspipe
 bash /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/install.sh --instdir /opt/sophos-spl
 bc
 cat /etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
+cat /etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg
+cat /opt/sophos-spl/plugins/av/chroot/susi/update_source//reputation/filerep.dat /opt/sophos-spl/plugins/av/chroot/susi/update_source//reputation/signerrep.dat
+cat /opt/sophos-spl/plugins/av/chroot/susi/update_source//temp_manifest.txt
+cat /var/cache/motd-news
+cat /var/lib/landscape/landscape-sysinfo.cache
+cat /var/lib/ubuntu-advantage/apt-esm/etc/apt/trusted.gpg.d/ubuntu-pro-esm-apps.gpg
+cat /var/lib/update-notifier/fsck-at-reboot
+cat /var/lib/update-notifier/updates-available
+cat /var/run/reboot-required
+chmod +r /var/lib/update-notifier/updates-available
+chmod 750 /opt/sophos-spl/plugins/av/chroot/susi/update_source/
+chown -R root:sophos-spl-group /opt/sophos-spl/plugins/av/chroot/susi/update_source/
+cmp /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/manifest.dat /opt/sophos-spl/plugins/av/var/manifest.dat
+cmp -s apt.extended_states.0 /var/lib/apt/extended_states
+cmp -s dpkg.diversions.0 /var/lib/dpkg/diversions
+cmp -s dpkg.statoverride.0 /var/lib/dpkg/statoverride
+cmp -s dpkg.status.0 /var/lib/dpkg/status
+cmp -s -n 1 - /etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
+cmp -s -n 1 - /etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg
+cmp -s -n 1 - /var/lib/ubuntu-advantage/apt-esm/etc/apt/trusted.gpg.d/ubuntu-pro-esm-apps.gpg
+cp /opt/sophos-spl/plugins/av/chroot/susi/update_source//nonsupplement_manifest.txt /opt/sophos-spl/plugins/av/chroot/susi/update_source//temp_manifest.txt
+cp -auv /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugincut -c -80
+s/av/chroot/susi/update_source/model/manifest.dat /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/model.dat /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/model.so /opt/sophos-spl/plugins/av/chroot/susi/update_source/model/
+cut -c -80
+cut -d  -f4
+cut -d: -f 2-
+cut -f1 -d   /proc/loadavg
+date +%s
+date --iso-8601
+date -r /var/lib/apt/periodic/download-upgradeable-stamp --iso-8601
+date -r /var/lib/apt/periodic/update-stamp --iso-8601
+dircolors -b
+dirname /usr/bin/lesspipe
+dirname /var/lib/update-notifier/updates-available
+dpkg -l wget
+dpkg-query --list -- wget
+env LC_ALL=C.UTF-8 unattended-upgrade --help
+expr 1712596568 + 86400
+find /etc/apt/trusted.gpg.d -name *.asc ) -mindepth 1 -maxdepth 1 ( -name *.gpg -o
+find /var/cache/apt/archives/ ) -and -not ( -mtime -2 -or -ctime -2 ) -name -print0 *.deb ( -mtime +30 -and -ctime +30
+find /var/crash/. -regex .*/[0-9]{12}$ ( -mtime +7 ) -exec rm -Rf -- ! {} ; -name . -prune -type d -regextype posix-extended
+find /var/crash/. -size 0 -a ! -name *.upload* -a ! -name *.drkonqi* ! ) -o -mtime +7 ) -exec rm -f -- {} -name ; . -prune -type f ( (
+find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/updates-available -print -quit
+find /var/lib/landscape/landscape-sysinfo.cache -newermt now-1 minutes
+find /var/lib/update-notifier/hwe-eol -newermt now-1 days
+find /var/lib/ubuntu-advantage/apt-esm/etc/apt/trusted.gpg.d -name *.asc ) -mindepth 1 -maxdepth 1 ( -name *.gpg -o
+find /var/lib/update-notifier/updates-available -newermt now-7 days
+flock -w 3600 3
+flock -x -w 60 10
+gpgconf --kill all
+gpg-connect-agent --no-autostart KILLAGENT
+gpg-connect-agent --no-autostart --dirmngr KILLDIRMNGR
+gpg-connect-agent -s --no-autostart GETINFO scd_running /if ${! $?} scd killscd /end
+grep ^Check interval:
+grep ^Maximum mount count:
+grep ^Mount count:
+grep -c ^processor /proc/cpuinfo
+grep ^Next check after:
+grep -E overlayroot|/media/root-ro|/media/root-rw /proc/mounts
+grep -m1 ^model name /proc/cpuinfo
+grep -q download-only
+grep -q -m 1 .
+grep -q System information as of /var/lib/landscape/landscape-sysinfo.cache
+groups
+head -n 10
+id -u
+locale
+ls --color=auto
+ls -rt /var/cache/apt/archives//*.deb
+mktemp
+mktemp --directory --tmpdir apt-key-gpghome.XXXXXXXXXX
+mktemp -p /var/lib/update-notifier
+mount
+mv /var/lib/update-notifier/tmp.kcLYGceDAm /var/lib/update-notifier/updates-available
+pgrep -G sophos-spl-group sophos_threat_d
+readlink -f /etc/apt/trusted.gpg.d/
+readlink -f /tmp/apt-key-gpghome.6e3adoxpFH
+readlink -f /var/lib/ubuntu-advantage/apt-esm/etc/apt/trusted.gpg.d/
+runc init
+run-parts --lsbsysinit /etc/update-motd.d
+run-parts --report /etc/cron.hourly
+sed -e s#'#'"'"'#g
+seq 1 254
+sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new
+sh -c /usr/bin/test -e /usr/share/dbus-1/system-services/org.freedesktop.PackageKit.service && /usr/bin/test -S /var/run/dbus/system_bus_socket && /usr/bin/gdbus call --system --dest org.freedesktop.PackageKit --object-path /org/freedesktop/PackageKit --timeout 4 --method org.freedesktop.PackageKit.StateHasChanged cache-update > /dev/null; /bin/echo > /dev/null
+sh -c /usr/lib/update-notifier/update-motd-updates-available 2>/dev/null || true
+sh -c [ ! -e /run/systemd/system ] || [ $(id -u) -ne 0 ] || systemctl start --no-block apt-news.service esm-cache.service || true
+sh -c if /usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db; then /usr/lib/cnf-update-db > /dev/null; fi
+sh -c touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true
+sha256sum
+sha256sum /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/vdl/manifestdata.dat
+sha256sum /opt/sophos-spl/plugins/av/chroot/susi/update_source//model/manifest.dat
+sortsort -r
+stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+stat -c %Y /var/lib/update-notifier/fsck-at-reboot
+systemctl is-active -q connman.service
+systemctl is-active -q NetworkManager.service
+systemctl is-active -q systemd-networkd.service
+systemctl show --property=ActiveState,UnitFileState,SubState,MainPID cloud-config.service
+systemctl show --property=ActiveState,UnitFileState,SubState,MainPID cloud-final.service
+systemctl show --property=ActiveState,UnitFileState,SubState,MainPID cloud-init.service
+systemctl show --property=ActiveState,UnitFileState,SubState,MainPID cloud-init-local.service
+systemctl start --no-block apt-news.service esm-cache.service
+systemd-detect-virt --quiet --container
+systemd-tmpfiles --cleantar -df alternatives.tar.0 -C /var/lib/dpkg alternatives
+touch /opt/sophos-spl/plugins/av/chroot/var/susi_update.lock
+touch /tmp/apt-key-gpghome.D9SBx9kpVJ/pubring.gpg
+touch /var/lib/apt/periodic/download-upgradeable-stamp
+touch /var/lib/apt/periodic/update-stamp
+touch /var/lib/apt/periodic/update-success-stamp
+touch /var/lib/apt/periodic/upgrade-stamp
+tr -c -d [:alnum:]
+tr -d \000-\011\013\014\016-\037
+uname -m
+uname -o
+uname -p
+uname -r
+wget --timeout 60 -U wget/1.21.2-2ubuntu1 Ubuntu/22.04.3/LTS GNU/Linux/6.5.0-1014-aws/x86_64 Intel(R)/Xeon(R)/CPU/E5-2686/v4/@/2.30GHz cloud_id/aws -O- --content-on-error https://motd.ubuntu.com
+who -q
+xargs -r -0 rm -f
+
 
