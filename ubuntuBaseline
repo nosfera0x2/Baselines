@@ -236,5 +236,48 @@ uname -r
 wget --timeout 60 -U wget/1.21.2-2ubuntu1 Ubuntu/22.04.3/LTS GNU/Linux/6.5.0-1014-aws/x86_64 Intel(R)/Xeon(R)/CPU/E5-2686/v4/@/2.30GHz cloud_id/aws -O- --content-on-error https://motd.ubuntu.com
 who -q
 xargs -r -0 rm -f
-
-
+cp -auv /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/manifest.dat /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/model.dat /opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/files/plugins/av/chroot/susi/update_source/model/model.so /opt/sophos-spl/plugins/av/chroot/susi/update_source/model/
+/usr/bin/systemctl is-active apparmor
+cat /tmp/tmp
+date --date=2024
+chmod -R u=rwX
+/usr/lib/apt/methods/http
+/bin/sh /usr/bin/apt-key
+/bin/date
+/bin/sh /usr/bin/egrep overlayroot|/media/root-ro|/media/root-rw /proc/mounts
+/bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held update
+/bin/sh -c test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r
+/bin/sh -c test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available
+/bin/systemctl --user set-environment DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+/opt/sophos-spl/base/update/versig -c/opt/sophos-spl/base/update/rootcerts -f/opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV/manifest.dat -d/opt/sophos-spl/base/update/cache/sdds3primary/ServerProtectionLinux-Plugin-AV --silent-off
+/opt/sophos-spl/plugins/edr/bin/sophos_livequery 
+/usr/bin/python3 -Es /usr/bin/lsb_release -d -s
+/usr/bin/locale-check C.UTF-8
+/usr/bin/python3 -Es /usr/bin/lsb_release -i -s
+/usr/bin/systemctl is-active auditd
+/usr/bin/systemctl is-active apparmor
+/usr/bin/test -e /usr/share/dbus-1/system-services/org.freedesktop.PackageKit.service
+/usr/lib/apt/methods/http
+/usr/lib/apt/methods/store
+/usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccsIjSbj.s -imultiarch x86_64-linux-gnu shocker.c -quiet -dumpbase shocker.c -dumpbase-ext .c
+apt-config shell MaxSize APT::Periodic::MaxSize
+awk $1 == "ii" { print($3); exit(0); }
+awk {print $1} /proc/uptime
+basename /usr/bin/lesspipe
+chmod 700 /tmp/apt-key
+chmod -R u=rwX
+cp -a /tmp/apt-key-gpghome
+cp -auv /opt/sophos-spl
+cut -c 40 /tmp
+date -d now
+date --date
+date  -r /var/lib
+gpgv --homedir
+readlink -f /tmp/apt-key
+rm -f /tmp/
+rm -f /var/atlassian
+runc --root
+run-parts
+sed -e s/ /\//g
+sed -e s/.*: // -e s:\s\+:/:g
