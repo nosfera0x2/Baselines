@@ -1,5 +1,16 @@
+/
 /opt/sophos-spl/base/update/versig.1
+/opt/sophos-spl/base/bin/machineid.1
+/opt/sophos-spl/base/bin/SulDownloader.1
 /opt/sophos-spl/plugins/edr/bin/sophos_livequery.1
+/opt/sophos-spl/base/bin/telemetry.1
+/opt/sophos-spl/plugins/av/sbin/sophos_threat_detector.1
+/opt/sophos-spl/plugins/av/sbin/sophos_threat_detector_launcher.1
+/opt/sophos-spl/plugins/av/sbin/sync_versioned_files.1
+/usr/bin/cmp
+/usr/bin/df
+/usr/bin/dircolors
+/usr/bin/dirname
 /usr/bin/apt-config
 /usr/bin/apt-get
 /usr/bin/basename
@@ -36,4 +47,14 @@
 /usr/lib/systemd/systemd-user-runtime-dir
 /usr/sbin/dumpe2fs
 /usr/sbin/fstrim
+/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+/usr/lib/systemd/user-generators/systemd-xdg-autostart-generator
+/usr/lib/systemd/systemd-networkd-wait-online
+/usr/lib/systemd/systemd-localed
+/usr/lib/systemd/systemd-hostnamed
+/usr/lib/apt/methods/gpgv
+/usr/lib/apt/apt-helper
+/usr/bin/xargs
+
+
 
