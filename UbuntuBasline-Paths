@@ -56,6 +56,35 @@
 /usr/lib/apt/methods/gpgv
 /usr/lib/apt/apt-helper
 /usr/bin/xargs
+/usr/bin/bc
+/usr/bin/dpkg-query
+/usr/bin/du
+/usr/bin/env
+/usr/bin/find
+/usr/bin/flock
+/usr/bin/free
+/usr/bin/gdbus
+/usr/bin/gpgconf
+/usr/bin/gpg-connect-agent
+/usr/bin/grep
+/usr/bin/groups
+/usr/bin/gzip
+/usr/bin/head
+/usr/bin/hostnamectl
+/usr/bin/id
+/usr/bin/install
+/usr/bin/ischroot
+/usr/bin/locale
+/usr/bin/localectl
+/usr/bin/ls
+/usr/bin/lscpu
+/usr/bin/mandb
+/usr/bin/mktemp
+/usr/bin/ubuntu-distro-info
+/usr/bin/tr
+/usr/bin/uname
+/usr/sbin/logrotate
+
 
 
 
