@@ -26,6 +26,7 @@
 /usr/bin/gpgv
 /usr/bin/locale-check
 /usr/bin/mv
+/usr/bin/mount
 /usr/bin/python3.10
 /usr/bin/readlink
 /usr/bin/rm
