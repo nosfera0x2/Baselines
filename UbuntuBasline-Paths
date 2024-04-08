@@ -84,6 +84,9 @@
 /usr/bin/tr
 /usr/bin/uname
 /usr/sbin/logrotate
+/usr/bin/stat
+/usr/bin/systemd-detect-virt
+
 
 
 
