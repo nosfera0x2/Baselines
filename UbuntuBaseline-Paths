@@ -87,6 +87,21 @@
 /usr/sbin/logrotate
 /usr/bin/stat
 /usr/bin/systemd-detect-virt
+/usr/bin/perl
+/usr/lib/systemd/system-generators/systemd-rc-local-generator
+/usr/bin/udevadm
+/usr/libexec/netplan/generate
+/usr/bin/dbus-send
+/usr/bin/apt-extracttemplates
+/usr/bin/dpkg-split
+/usr/bin/dpkg-deb
+
+
+
+
+
+
+
 
 
 
