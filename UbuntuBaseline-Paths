@@ -1,5 +1,7 @@
 /
 /opt/sophos-spl/base/update/versig.1
+/memfd:/sophos-subprocess-1750668-exec1 (deleted)
+/opt/sophos-spl/plugins/runtimedetections/bin/runtimedetections.1
 /opt/sophos-spl/base/bin/machineid.1
 /opt/sophos-spl/base/bin/SulDownloader.1
 /opt/sophos-spl/plugins/edr/bin/sophos_livequery.1
@@ -95,8 +97,10 @@
 /usr/bin/apt-extracttemplates
 /usr/bin/dpkg-split
 /usr/bin/dpkg-deb
-
-
+/usr/bin/mkdir
+/usr/bin/echo
+/usr/bin/who
+/usr/bin/ln
 
 
 
